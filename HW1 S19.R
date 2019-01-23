@@ -57,8 +57,10 @@ hist(S$Earnings)
 hist(S$Height)
 #   Have R do a barplot of Triangle:   
 #    Use  barplot(table(vector))
+# the above syntax wouldn't work for me, the error message given was 
+# that the table i was trying to use is not a function
 triangle <- table(S$Triangle)
-barplot(triangle,names.arg=c("NA", "Sleep + Good Grades", "Sleep + Social Life", "Social Life+Good Grades"))
+barplot(triangle,names.arg=c("NA", "Sleep + Grades", "Sleep + Social", "Social + Grades"))
 #   Finally, plot Weight by Height
 #  (Make sure you get the height and 
 #  weight data in the data frame, S.)
