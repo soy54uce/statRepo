@@ -81,7 +81,7 @@ mpg20 <- mpg %>%
   filter(hwy > 20)
 
 ggplot(mpg20, aes(x = hwy, y = cty, color = class)) +
-  geom_point()
+  geom_point() 
 # OR like this:
 mpg %>% 
   filter(hwy > 20) %>% 
